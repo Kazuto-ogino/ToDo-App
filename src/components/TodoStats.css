@@ -1,0 +1,53 @@
+.todo-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+}
+
+.stats-info {
+  display: flex;
+  gap: 20px;
+}
+
+.stat-item {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.stat-item strong {
+  color: #495057;
+  font-weight: 600;
+}
+
+.clear-completed-btn {
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.clear-completed-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+@media (max-width: 600px) {
+  .todo-stats {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+  
+  .stats-info {
+    justify-content: space-around;
+  }
+}
